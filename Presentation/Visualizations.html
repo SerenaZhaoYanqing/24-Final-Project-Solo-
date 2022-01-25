@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Salary Prediction</title>
+  <link rel="stylesheet" href="https://assets.entrepreneur.com/content/3x2/2000/20191202130611-salarypicture.jpeg?auto=webp&quality=95&crop=16:9&width=675" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <!-- nav-bar  -->
+  <section id="nav-bar" class="container">
+    <header class="nav-bar">
+      <div class="brand"><a href="#hero"><h1>Visualizations</h1></a></div>
+      <div class="nav-list">
+        <div class="hamburger">
+          <div class="bar"></div>
+        </div>
+        <ul>
+          <li><a href="#about">Salary Overview </a></li>
+          <li><a href="#services">Other Parameters</a></li>
+        </ul>
+      </div>
+    </header>
+  </section>
+  <!-- End nav-bar  -->
+
+  <!-- Hero Section  -->
+  <section id="hero" class="hero container">
+    <div class="hero-info">
+      <h1 class="hero-info-heading">How 2021 Developer Salary  <br>Looks like</h1>
+      <p class="hero-info-subheading">Based on Stackflow 2021 Survey</p>
+      <a href="https://insights.stackoverflow.com/survey/2021" type="button" class="hero-info-button">More details of data can be found here</a>
+    </div>
+    <div class="hero-img">
+      <img src="https://assets.entrepreneur.com/content/3x2/2000/20191202130611-salarypicture.jpeg?auto=webp&quality=95&crop=16:9&width=675" alt="">
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Salary Overview section  -->
+  <section id="about" class="about container">
+    <div class="about-info">
+      <h1 class="about-info-heading">Salary Overview </h1>
+      <p class="about-info-desc">Salary distribution is approximately symmetric and there are not many outliers from what we can see from the plot. 
+          The range of 40k to 100k are most developers salary sits. </p>
+    </div>
+    <div class="about-img">
+      <div class="about-img-wrapper">
+        <img src="./image/salary_hist.png" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- End  section  -->
+
+  <!-- Other Parameters Section  -->
+  <section id="services" class="services container">
+    <div class="services-header">
+      <h1 class="services-header-heading">Other Parameters</h1>
+      <p class="services-header-desc">We have also analyse : years of professional coding experience, education level, age, gender, countries
+          and where the developers learn coding from to see the individual relations with Salary.</p>
+    </div>
+    <div class="services-info">
+      <div class="service">
+        <div class="service-card">
+          <div class="service-front">
+            <i class="fa fa-palette"></i>
+            <h1 class="service-front-heading">Countries</h1>
+            <style>
+                .box {
+                  width: 30%;
+                  height: 200px;
+                  border: 5px dashed #f7a239;
+                }
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              </style>
+            <img src="./image/country_salarymean.png" alt="">
+          </div>
+          <div class="service-back">
+            <h1 class="service-back-heading">Countries & Salary</h1>
+            <p class="service-back-desc"> We can see that based on different countries, there are differnt mean salary which indicates that 
+                Countries is one facotr that will be impacting the salary level. 
+                </p>
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="service-card">
+          <div class="service-front">
+            <i class="fa fa-laptop-code"></i>
+            <h1 class="service-front-heading">Where to learn coding</h1>
+            <style>
+                .box {
+                  width: 30%;
+                  height: 200px;
+                  border: 5px dashed #f7a239;
+                }
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              </style>
+            <img src="./image/learncode_salarymean.png" alt="">
+          </div>
+          <div class="service-back">
+            <h1 class="service-back-heading">Where to learn coding</h1>
+            <p class="service-back-desc">
+                We can see that there is no much difference in salary level in terms of either the developers learn coding from school, or online or from bootcamp etc.
+                Hence we will remove it from our training data.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="service-card">
+          <div class="service-front">
+            <i class="fa fa-building"></i>
+            <h1 class="service-front-heading">Years of Professional Coding Experience</h1>
+            <style>
+                .box {
+                  width: 30%;
+                  height: 200px;
+                  border: 5px dashed #f7a239;
+                }
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              </style>
+            <img src="./image/years_scatter.png" alt="">
+          </div>
+          <div class="service-back">
+            <h1 class="service-back-heading">Coding Experience</h1>
+            <p class="service-back-desc">There is a wide range of salary income for all different level of coding experience. hence we believe that
+                the length of coding experience would have a direct/indirect impact on Salary. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section  -->
+
+  <script src="./app2.js"></script>
+</body>
+</html>
