@@ -1,7 +1,3 @@
-# Final_Project_Salary
-
- 
-
 # Project Goal
 Aiming to use the 2021 stackflow developer survey to run machine learning model for predicting the developer's salary and deploy it to web_app.
 
