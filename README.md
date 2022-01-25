@@ -1,8 +1,15 @@
 # Final_Project_Salary
 
-# Project Goal
-Aiming to use the 2021 stackflow developer survey to run machine learning model for predicting the developer's salary.
  
+
+# Project Goal
+Aiming to use the 2021 stackflow developer survey to run machine learning model for predicting the developer's salary and deploy it to web_app.
+
+* As heroku is not compatiable with apple M1. Please follow below steps to try out the web app.
+ 1. clone current repository
+ 2. run salary_prediction jupyter notebook ( which will generate a saved.pkl file). as the file is too big to be pushed to github.
+ 3. once the notebook has been run, use command streamlit run app.py 
+ 4. you might have to install streamlit if you dont have it  pip install streamlit 
 
 # About the Data
 In  2021 over 80,000 developers has completed the 2021 Developer Survey by StackFlow, providing information on  how they learn and level up, which tools they’re using, and what they want.I have utilised the survey data to develop machine learning model, using different parameters to run estimator for  developer's salary.
